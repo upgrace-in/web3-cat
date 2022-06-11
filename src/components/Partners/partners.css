@@ -1,0 +1,38 @@
+/* .partners div {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.heading-border hr {
+  width: 100%;
+  background-color: white;
+  margin-right: 20px;
+  text-align: right;
+}
+.heading-border {
+  width: 100px;
+  display: flex;
+}
+
+.partner-heading {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  line-height: 130%;
+  font-weight: bold;
+}
+.partners-img img {
+  filter: grayscale(100%);
+}
+
+.partners-img img:hover {
+  filter: grayscale(0%);
+}
+@media (max-width: 640px) {
+  .heading-border {
+    width: 40px !important;
+    display: flex;
+  }
+}

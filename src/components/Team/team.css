@@ -1,0 +1,50 @@
+.team-Div {
+    width: 190px;
+    height: 250px;
+    padding-top: 40px;
+    border-radius: 100px 100px 0px 0px;
+    border: 0.9px solid rgb(98, 98, 98);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.team-name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+}
+
+.team-Div img {
+    height: 80%;
+    width: 100%;
+}
+
+.heading-border hr {
+    width: 100%;
+    border: 2px solid whitesmoke;
+    background-color: white;
+    text-align: right;
+}
+
+.team-box {
+    grid-column-gap: 31px;
+}
+
+.team-box > * {
+    margin-top: 50px;
+}
+
+.team-box span > div:first-child img {
+    width: 85%;
+    height: 85%;
+}
+
+.heading-border {
+    width: 100px;
+    display: flex;
+}
+
+.team-heading {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

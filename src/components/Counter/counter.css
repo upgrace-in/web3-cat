@@ -1,0 +1,27 @@
+.counter {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.counter-expli {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: rgb(206, 205, 205);
+}
+
+.counter-progress>div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 167px;
+}
+
+@media only screen and (max-width:990px) {
+    .counter-progress {
+        display: flex;
+        place-items: center;
+        flex-wrap: wrap;
+    }
+}

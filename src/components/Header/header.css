@@ -1,0 +1,32 @@
+.h-button-1 {
+  background-color: #e4a841;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.h-button-2 {
+  background-color: #e4a841;
+  border-radius: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
+  z-index: 200;
+  background-color: #0006;
+}
+@media only screen and (max-width: 1280px) {
+  .hide-bar {
+    display: none;
+  }
+}
+.show-bar {
+  display: flex;
+}
+@media only screen and (min-width: 1280px) {
+  .show-bar {
+    display: none;
+  }
+}

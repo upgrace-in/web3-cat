@@ -1,0 +1,210 @@
+.roadmap-parent-div {
+  background-image: linear-gradient(to left, #202020 30%, #4e4138);
+}
+
+.roadmap {
+  max-width: 1431px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #161616;
+  border-radius: 720px;
+  overflow: hidden;
+}
+
+.raodmap-phase {
+  display: flex;
+  justify-content: center;
+  grid-gap: 76px;
+  padding-top: 250px;
+  padding-bottom: 150px;
+}
+
+.roadmap div {
+  margin: 1px;
+  position: relative;
+}
+
+.backLine {
+  position: absolute;
+  left: 35%;
+  /* transform: translateX(-60%); */
+  margin-top: 140px;
+  height: 150vh;
+  width: 5px;
+  background-color: #444040;
+}
+
+.roadmap-box {
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  background-color: #e4a841;
+  max-width: 477px;
+  width: 100%;
+}
+
+.roadmap-box p span {
+  color: white;
+  font-size: 10px;
+}
+
+.roadmap-box p {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #1f1f1f;
+  font-size: 20px;
+  font-family: inter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.raodmap-num {
+  justify-content: space-between;
+  padding-left: 140px;
+  padding-top: 190px;
+  padding-bottom: 220px;
+}
+
+.raodmap-num > div {
+  position: relative;
+}
+
+.raodmap-num > div::after {
+  content: "";
+  position: absolute;
+  height: 475px;
+  width: 5px;
+  background-color: #444040;
+  top: 34px;
+  left: 50%;
+}
+
+.raodmap-num > div:nth-child(2):after {
+  height: 527px;
+}
+
+.raodmap-num > div:nth-child(3):after {
+  height: 392px;
+}
+
+.raodmap-num > div:nth-child(4):after {
+  height: 250px;
+}
+
+.raodmap-num > div:last-child:after {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .roadmap {
+    width: 90vw;
+  }
+
+  .raodmap-num {
+    padding-left: 10px;
+  }
+
+  .backLine {
+    left: 25%;
+  }
+  .raodmap-phase {
+    display: flex;
+    justify-content: center;
+    grid-gap: 30px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .raodmap-num div {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .backLine {
+    left: 20%;
+  }
+  .raodmap-phase {
+    padding-top: 50px;
+  }
+  .roadmap-box p {
+    align-items: flex-start;
+  }
+}
+
+.raodmap-num div {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0px 20px;
+  border-radius: 100px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.phase3 {
+  margin-top: 100px !important;
+}
+
+.phase4 {
+  margin-bottom: -80px !important;
+}
+
+.phase5 {
+  margin-bottom: -20px !important;
+}
+
+.roadmap-heading {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 991px) {
+  .roadmap-heading {
+    display: flex;
+    font-size: 38px;
+    margin-top: 80px;
+    align-items: center;
+    left: 50%;
+    font-weight: 700;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 640px) {
+  .roadmap-box {
+    border-radius: 0 !important;
+    max-width: 300px;
+  }
+  .raodmap-num div {
+    transform: rotate(90deg);
+  }
+  .raodmap-num > div::after {
+    display: none;
+  }
+  .raodmap-num {
+    padding-left: 21px;
+    width: 30px;
+  }
+  .roadmap-heading {
+    margin-top: 0;
+  }
+}
+@media (max-width: 640px) {
+  .raodmap-num {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .roadmap-box {
+    border-radius: 0 !important;
+    max-width: 200px;
+  }
+  .raodmap-phase {
+    padding-top: 80px;
+  }
+}

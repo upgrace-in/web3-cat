@@ -1,0 +1,125 @@
+.roadmap-div {
+  background-image: linear-gradient(to left, #4e4138, #202020 30%);
+}
+
+.mystery-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-block: 200px;
+}
+
+.mysterybox-heading {
+  text-align: center;
+  margin-top: 75px;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70px;
+  z-index: 10000;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
+.mysterybox-heading h1:nth-child(2) {
+  margin-left: 100px;
+}
+
+.mysteryBox-text {
+  padding-left: 50px;
+  color: white;
+  position: relative;
+}
+
+.mysteryBox-list {
+  color: white;
+  padding-top: 20px;
+  padding-left: 100px;
+  list-style-type: disc;
+}
+
+.mysteryBox-text h1 {
+  margin-top: 100px;
+  font-size: 22px;
+}
+
+.mysteryBox-list li {
+  margin-top: 30px;
+}
+
+.mysteryBox-text a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0;
+  margin-top: 50px;
+  padding: 8px 40px;
+  margin-left: 85px;
+  border-radius: 100px;
+  display: inline-block;
+  background-color: rgb(223, 175, 55);
+}
+
+.mysteryBox-img-div {
+  position: relative;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  margin-left: 65px;
+}
+
+.mysteryBox-img-div div {
+  top: -200px;
+  position: absolute;
+}
+
+.mysterybox-img img {
+  width: 350px;
+  margin-top: 120px !important;
+}
+
+.mysterybox-border img {
+  margin-left: 60px;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.mysterybox-back img {
+  width: 400px !important;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 990px) {
+  .mystery-box {
+    display: grid;
+    /* height: 150vw; */
+    /* grid-template-columns: 1fr; */
+    place-items: center;
+  }
+  .mysteryBox-img-div {
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mysteryBox-list {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mystery-box {
+    grid-template-columns: 1fr;
+    place-items: center;
+    grid-gap: 20px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+  }
+  .mysteryBox-text {
+    padding-left: 10px;
+  }
+}
+.transform-custom {
+  transform: translate(-33%);
+}

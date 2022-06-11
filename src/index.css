@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: garmani;
+    font-weight: 400;
+    src: url(./assets/fonts/Garmani.woff2) format("woff");
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #181818;
+  overflow-x: hidden;
+}
+
+.primary-color {
+  color: rgb(228, 168, 65);
+}
+.primary-background {
+  background-color: rgb(228, 168, 65);
+}
